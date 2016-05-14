@@ -1,0 +1,322 @@
+header{
+	height:100px;
+	background:black;
+}
+header h1{
+	float: left;
+    margin-left: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+header h2{
+    color: white;
+    margin-left: 10px;
+    font-weight: 100;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.section_collection section{
+	width:250px;
+	border:1px solid black;
+	padding:20px;
+	float: left;
+    margin: 10px;
+}
+section h1{
+	font-size:small;
+	text-align:center;
+	text-transform: uppercase;
+}
+.notimplemented{
+	opacity:0.4;
+}
+
+.implemented{
+	transition:all .5s;
+	cursor:pointer;
+}
+.implemented:hover{
+	color:white;
+	background-color:black;
+}
+
+.section_collection{
+	margin:50px;
+}
+
+.nodisplay{
+	display:none;
+}
+
+.entry-list{
+	list-style-type: none;
+}
+
+.entry-list li{
+	    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.entry-list li span{
+	height:40px;
+	display:inline-block;
+}
+
+.date{
+    width: 100px;
+    padding-left: 20px;
+    font-size:1.5em;
+}
+.time{
+	min-width:50px;
+}
+.title{
+	font-size:1.5em;
+
+}
+.location{
+}
+
+.before-now-true{
+	opacity:1;
+}
+.back{
+	margin-left:20px;
+	width:50px;
+	color:white;
+	text-align:center;
+	font-size:30px;
+	background-color:#3A539B;
+	transition:all .5s;
+	cursor:pointer;
+	line-height:30px;
+}
+.fileupload{
+	    float: left;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.back:hover{
+	background-color:#22313F;
+}
+.new-item-btn{
+
+    background-color: #3498DB;
+    color: white;
+    padding-left: 40px;
+    display: block;
+    width: 300px;
+    cursor:pointer;
+    transition:all .5s;
+}
+.new-item-btn:hover{
+	background-color:#2C3E50;
+}
+.style1{
+	background-color: #45a9ec;
+	padding-right:40px;
+	width:initial;
+}
+.bar span{
+	float:left;
+}
+.num-entries{
+	background-color:#8E44AD;
+	width:50px;
+	font-size:1.5em;
+	color:white;
+	text-align:center;
+}
+.entry-list .neuer-termin{
+	margin-left:20px;
+	height:80px;
+}
+.col{
+	float:left;
+}
+.error{
+    color: white;
+    margin-top: -6px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition:all .5s;
+}
+
+.error-true{
+	background-color:#D32F2F;
+}
+.error-{
+	background-color:#388E3C;
+}
+
+.neuer-termin form{
+	position:relative;
+}
+
+.deploybutton{
+	    position: absolute;
+    top: 30px;
+    width: 530px;
+    text-align: center;
+    /* font-weight: bold; */
+    color: white;
+    cursor:pointer;
+}
+
+.before-now-true{
+	opacity:0.6;
+}
+
+.del{
+	font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+    margin-left: 20px;
+    cursor: pointer;
+    transition:all .5s;
+}
+
+.del:hover{
+	opacity:1;
+	background-color:#D32F2F;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.newstickerinput{
+	border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+.newstickeradd{
+	margin:10px;
+	margin-left:0;
+}
+.bildstrukturen{
+	height:40px;
+	margin-left:20px;
+}
+.img-btn{
+	width:50px;
+	height:40px;
+	cursor:pointer;
+	text-align:center;
+	line-height:40px;
+	background:#95a5a6;
+	float:left;
+}
+.img-btn-active{
+	background:#e74c3c;
+}
+
+.img-btn-inactive{
+	opacity:0.6;
+}
+.img-btn-axx{
+	background:#16a085;
+}
+.struktur-title{
+	margin-left: 10px;
+  font-size: 30px;
+}
+
+#transaction_status{
+    line-height: 100px;
+    float: left;
+    color: white;
+    margin-left: 50px;
+    font-size: 3em;
+}
+
+.bbar{
+    bottom: 0;
+    height: 100px;
+   background-color: black;
+   width: 100%;
+	  position: absolute;
+}
+
+#console{
+	color: black;
+float: right;
+margin-right: 50px;
+margin-top: 10px;
+width: 300px;
+background-color: white;
+height: 70px;
+overflow:scroll;
+}
+
+.dialog{
+	width: 350px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 10px;
+    margin: auto;
+}
+
+.decide{
+	position: absolute;
+    bottom: 0;
+    left:0;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    cursor:pointer;
+}
+.decide div{
+	float:left;
+	width:50%;
+	text-align:center;
+}
+.ok{
+background-color:green;	
+}
+.abrt{
+	background-color:red;
+}
+#fname{
+	color:black;
+}
+.axx-open{
+	height:initial;
+}
+.subul{
+    margin-top: -5px;
+    margin-left: -10px;	
+}
+.thing-name{
+	    padding-left: 20px;
+    font-size: x-large;
+}

@@ -1,0 +1,721 @@
+INFO:	Struktur beginnt.
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013'
+INFO:	Erkannte Kategoriestruktur: 'bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011'
+['aa_Test', 'b_Bildergeschichte_Konzertreise2014', 'c_Konzertreise2014', 'd_Konzertreise2013', 'e_Ravensburg2013', 'f_Konzertreise2012', 'g_Konzertreise2011']
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test', [], ['Wir singen oft Gottesdienste.jpg', 'und nicht nur um zu singen..jpg', 'chapter.name', 'Auch in fremden L&auml;ndern..jpg', 'chapter.order', 'Wir gehen oft auf Reisen.jpg', 'Hallo, wir sind die Chorknaben..jpg', 'Deshalb sind wir nie alleine..jpg', 'Sogar die Ehemaligen sind manchmal dabei..jpg', 'und Konzerte..jpg', 'Wir geh&ouml;ren zu den Pueri Cantores.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['Hallo, wir sind die Chorknaben..jpg', 'Wir singen oft Gottesdienste.jpg', 'und Konzerte..jpg', 'Auch in fremden L&auml;ndern..jpg', 'Wir gehen oft auf Reisen.jpg', 'und nicht nur um zu singen..jpg', 'Wir geh&ouml;ren zu den Pueri Cantores.jpg', 'Deshalb sind wir nie alleine..jpg', 'Sogar die Ehemaligen sind manchmal dabei..jpg']
+INFO:		Image "Hallo, wir sind die Chorknaben..jpg" has no .info: Using Filename for name
+INFO:	Creating necessary dir for thumbnail creation: thumbs/
+INFO:	Creating necessary dir for thumbnail creation: real/
+INFO:	Processing File: 0	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Hallo, wir sind die Chorknaben..jpg
+INFO:		Image "Wir singen oft Gottesdienste.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 1	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Wir singen oft Gottesdienste.jpg
+INFO:		Image "und Konzerte..jpg" has no .info: Using Filename for name
+INFO:	Processing File: 2	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/und Konzerte..jpg
+INFO:		Image "Auch in fremden L&auml;ndern..jpg" has no .info: Using Filename for name
+INFO:	Processing File: 3	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Auch in fremden L&auml;ndern..jpg
+INFO:		Image "Wir gehen oft auf Reisen.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 4	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Wir gehen oft auf Reisen.jpg
+INFO:		Image "und nicht nur um zu singen..jpg" has no .info: Using Filename for name
+INFO:	Processing File: 5	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/und nicht nur um zu singen..jpg
+INFO:		Image "Wir geh&ouml;ren zu den Pueri Cantores.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 6	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Wir geh&ouml;ren zu den Pueri Cantores.jpg
+INFO:		Image "Deshalb sind wir nie alleine..jpg" has no .info: Using Filename for name
+INFO:	Processing File: 7	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Deshalb sind wir nie alleine..jpg
+INFO:		Image "Sogar die Ehemaligen sind manchmal dabei..jpg" has no .info: Using Filename for name
+INFO:	Processing File: 8	bilderStrukturen/_Chorserv/ChorservBilderStruktur/aa_Test/Sogar die Ehemaligen sind manchmal dabei..jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014', [], ['Barcelona.jpg', 'chapter.name', 'Sagrada Familia 1.jpg', 'Spanische Tundra.jpg', 'Ankunft in Valence.jpg', 'Chillen am Strand (Valencia).jpg', 'Rathaus Valence.jpg', 'chapter.order', 'Servant (Freizeit).jpg', 'Die erste Busfahrt 2.jpg', 'Die erste Busfahrt (Biberach->Valence).jpg', 'Sagrada Familia.jpg', 'Barcelona Sagrada 1.jpg', 'Architektur in Valencia.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['Die erste Busfahrt (Biberach->Valence).jpg', 'Die erste Busfahrt 2.jpg', 'Ankunft in Valence.jpg', 'Rathaus Valence.jpg', 'Spanische Tundra.jpg', 'Barcelona.jpg', 'Barcelona Sagrada 1.jpg', 'Sagrada Familia 1.jpg', 'Architektur in Valencia.jpg', 'Chillen am Strand (Valencia).jpg', 'Servant (Freizeit).jpg']
+INFO:		Image "Die erste Busfahrt (Biberach->Valence).jpg" has no .info: Using Filename for name
+INFO:	Processing File: 9	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Die erste Busfahrt (Biberach->Valence).jpg
+INFO:		Image "Die erste Busfahrt 2.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 10	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Die erste Busfahrt 2.jpg
+INFO:		Image "Ankunft in Valence.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 11	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Ankunft in Valence.jpg
+INFO:		Image "Rathaus Valence.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 12	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Rathaus Valence.jpg
+INFO:		Image "Spanische Tundra.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 13	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Spanische Tundra.jpg
+INFO:		Image "Barcelona.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 14	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Barcelona.jpg
+INFO:		Image "Barcelona Sagrada 1.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 15	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Barcelona Sagrada 1.jpg
+INFO:		Image "Sagrada Familia 1.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 16	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Sagrada Familia 1.jpg
+INFO:		Image "Architektur in Valencia.jpg" has no .info: Using Filename for name
+INFO:	Processing File: 17	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Architektur in Valencia.jpg
+INFO:		Image "Chillen am Strand (Valencia).jpg" has no .info: Using Filename for name
+INFO:	Processing File: 18	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Chillen am Strand (Valencia).jpg
+INFO:		Image "Servant (Freizeit).jpg" has no .info: Using Filename for name
+INFO:	Processing File: 19	bilderStrukturen/_Chorserv/ChorservBilderStruktur/b_Bildergeschichte_Konzertreise2014/Servant (Freizeit).jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014', [], ['DSC_0865.jpg', 'DSC_0861.jpg', 'DSC_0651.jpg', 'DSC_0075.jpg.info', 'DSC_0821.jpg', 'DSC_0331.jpg', 'DSC_0165.jpg.info', 'DSC_0951.jpg', 'DSC_2119.jpg', 'DSC_0731.jpg', 'DSC_0393.jpg.info', 'DSC_0206.jpg.info', 'DSC_0012.jpg', 'DSC_0157.jpg.info', 'DSC_0170.jpg.info', 'DSC_0025.jpg', 'DSC_0075.jpg', 'DSC_0597.jpg.info', 'DSC_2048.jpg.info', 'DSC_0345.jpg.info', 'DSC_2009.jpg.info', 'DSC_0472.jpg.info', 'DSC_0801.jpg', 'DSC_2126.jpg.info', 'DSC_0165.jpg', 'DSC_0170.jpg', 'DSC_0101.jpg', 'DSC_0174.jpg.info', 'DSC_0644.jpg', 'DSC_0491.jpg.info', 'DSC_0802.jpg', 'DSC_0048.jpg.info', 'DSC_0522.jpg.info', 'DSC_0644.jpg.info', 'DSC_2009.jpg', 'DSC_1035.jpg', 'chapter.name', 'DSC_1020.jpg.info', 'DSC_0522.jpg', 'DSC_0520.jpg', 'DSC_0101.jpg.info', 'DSC_0821.jpg.info', 'DSC_0078.jpg', 'DSC_0358.jpg', 'DSC_0157.jpg', 'DSC_0070.jpg.info', 'DSC_0651.jpg.info', 'DSC_0843.jpg', 'DSC_0306.jpg', 'DSC_0129.jpg', 'DSC_0214.jpg', 'DSC_0520.jpg.info', 'DSC_0069.jpg.info', 'DSC_0133.jpg.info', 'DSC_2081.jpg', 'DSC_0122.jpg', 'DSC_0792.jpg.info', 'DSC_0069.jpg', 'DSC_0463.jpg', 'DSC_0358.jpg.info', 'chapter.order', 'DSC_0174.jpg', 'DSC_0802.jpg.info', 'DSC_0306.jpg.info', 'DSC_2130.jpg.info', 'DSC_0792.jpg', 'DSC_2111.jpg', 'DSC_0823.jpg', 'DSC_0048.jpg', 'DSC_0809.jpg', 'DSC_0951.jpg.info', 'DSC_0025.jpg.info', 'DSC_0129.jpg.info', 'DSC_1020.jpg', 'DSC_2130.jpg', 'DSC_0009.jpg', 'DSC_0009.jpg.info', 'DSC_0801.jpg.info', 'DSC_0865.jpg.info', 'DSC_0595.jpg', 'DSC_0497.jpg.info', 'DSC_0731.jpg.info', 'DSC_0211.jpg', 'DSC_0331.jpg.info', 'DSC_0491.jpg', 'DSC_0133.jpg', 'DSC_0823.jpg.info', 'DSC_0012.jpg.info', 'DSC_0346.jpg', 'DSC_2081.jpg.info', 'DSC_0210.jpg', 'DSC_0206.jpg', 'DSC_0472.jpg', 'DSC_0597.jpg', 'DSC_0211.jpg.info', 'DSC_2111.jpg.info', 'DSC_2073.jpg', 'DSC_2119.jpg.info', 'DSC_0809.jpg.info', 'DSC_0861.jpg.info', 'DSC_0393.jpg', 'DSC_0595.jpg.info', 'DSC_0070.jpg', 'DSC_0210.jpg.info', 'DSC_0214.jpg.info', 'DSC_0122.jpg.info', 'DSC_0345.jpg', 'DSC_0346.jpg.info', 'DSC_0463.jpg.info', 'DSC_2048.jpg', 'DSC_0497.jpg', 'DSC_0078.jpg.info', 'DSC_1035.jpg.info', 'DSC_0843.jpg.info', 'DSC_2073.jpg.info', 'DSC_2126.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['DSC_0009.jpg', 'DSC_0012.jpg', 'DSC_0025.jpg', 'DSC_0048.jpg', 'DSC_0069.jpg', 'DSC_0070.jpg', 'DSC_0075.jpg', 'DSC_0078.jpg', 'DSC_0101.jpg', 'DSC_0122.jpg', 'DSC_0129.jpg', 'DSC_0133.jpg', 'DSC_0157.jpg', 'DSC_0165.jpg', 'DSC_0170.jpg', 'DSC_0174.jpg', 'DSC_0206.jpg', 'DSC_0210.jpg', 'DSC_0211.jpg', 'DSC_0214.jpg', 'DSC_0306.jpg', 'DSC_0331.jpg', 'DSC_0345.jpg', 'DSC_0346.jpg', 'DSC_0358.jpg', 'DSC_0393.jpg', 'DSC_0463.jpg', 'DSC_0472.jpg', 'DSC_0491.jpg', 'DSC_0497.jpg', 'DSC_0520.jpg', 'DSC_0522.jpg', 'DSC_0595.jpg', 'DSC_0597.jpg', 'DSC_0644.jpg', 'DSC_0651.jpg', 'DSC_0731.jpg', 'DSC_0792.jpg', 'DSC_0801.jpg', 'DSC_0802.jpg', 'DSC_0809.jpg', 'DSC_0821.jpg', 'DSC_0823.jpg', 'DSC_0843.jpg', 'DSC_0861.jpg', 'DSC_0865.jpg', 'DSC_0951.jpg', 'DSC_1020.jpg', 'DSC_1035.jpg', 'DSC_2009.jpg', 'DSC_2048.jpg', 'DSC_2073.jpg', 'DSC_2081.jpg', 'DSC_2111.jpg', 'DSC_2119.jpg', 'DSC_2126.jpg', 'DSC_2130.jpg']
+INFO:	Processing File: 20	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0009.jpg
+INFO:	Processing File: 21	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0012.jpg
+INFO:	Processing File: 22	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0025.jpg
+INFO:	Processing File: 23	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0048.jpg
+INFO:	Processing File: 24	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0069.jpg
+INFO:	Processing File: 25	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0070.jpg
+INFO:	Processing File: 26	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0075.jpg
+INFO:	Processing File: 27	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0078.jpg
+INFO:	Processing File: 28	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0101.jpg
+INFO:	Processing File: 29	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0122.jpg
+INFO:	Processing File: 30	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0129.jpg
+INFO:	Processing File: 31	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0133.jpg
+INFO:	Processing File: 32	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0157.jpg
+INFO:	Processing File: 33	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0165.jpg
+INFO:	Processing File: 34	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0170.jpg
+INFO:	Processing File: 35	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0174.jpg
+INFO:	Processing File: 36	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0206.jpg
+INFO:	Processing File: 37	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0210.jpg
+INFO:	Processing File: 38	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0211.jpg
+INFO:	Processing File: 39	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0214.jpg
+INFO:	Processing File: 40	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0306.jpg
+INFO:	Processing File: 41	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0331.jpg
+INFO:	Processing File: 42	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0345.jpg
+INFO:	Processing File: 43	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0346.jpg
+INFO:	Processing File: 44	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0358.jpg
+INFO:	Processing File: 45	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0393.jpg
+INFO:	Processing File: 46	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0463.jpg
+INFO:	Processing File: 47	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0472.jpg
+INFO:	Processing File: 48	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0491.jpg
+INFO:	Processing File: 49	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0497.jpg
+INFO:	Processing File: 50	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0520.jpg
+INFO:	Processing File: 51	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0522.jpg
+INFO:	Processing File: 52	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0595.jpg
+INFO:	Processing File: 53	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0597.jpg
+INFO:	Processing File: 54	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0644.jpg
+INFO:	Processing File: 55	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0651.jpg
+INFO:	Processing File: 56	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0731.jpg
+INFO:	Processing File: 57	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0792.jpg
+INFO:	Processing File: 58	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0801.jpg
+INFO:	Processing File: 59	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0802.jpg
+INFO:	Processing File: 60	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0809.jpg
+INFO:	Processing File: 61	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0821.jpg
+INFO:	Processing File: 62	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0823.jpg
+INFO:	Processing File: 63	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0843.jpg
+INFO:	Processing File: 64	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0861.jpg
+INFO:	Processing File: 65	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0865.jpg
+INFO:	Processing File: 66	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_0951.jpg
+INFO:	Processing File: 67	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_1020.jpg
+INFO:	Processing File: 68	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_1035.jpg
+INFO:	Processing File: 69	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2009.jpg
+INFO:	Processing File: 70	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2048.jpg
+INFO:	Processing File: 71	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2073.jpg
+INFO:	Processing File: 72	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2081.jpg
+INFO:	Processing File: 73	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2111.jpg
+INFO:	Processing File: 74	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2119.jpg
+INFO:	Processing File: 75	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2126.jpg
+INFO:	Processing File: 76	bilderStrukturen/_Chorserv/ChorservBilderStruktur/c_Konzertreise2014/DSC_2130.jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013', [], ['DSC_0184.jpg', 'DSC_0855.jpg', 'DSC_0313.jpg', 'DSC_0232.jpg.info', 'DSC_0217.jpg.info', 'DSC_0559.jpg', 'DSC_0240.jpg', 'DSC_0781.jpg', 'DSC_0449.jpg.info', 'DSC_0228.jpg.info', 'DSC_0035.jpg.info', 'DSC_0456.jpg.info', 'DSC_1501.jpg.info', 'DSC_0093.jpg', 'DSC_0837.jpg.info', 'DSC_0291.jpg', 'DSC_0339.jpg', 'DSC_0315.jpg', 'DSC_0510.jpg', 'DSC_0642.jpg.info', 'DSC_0324.jpg.info', 'DSC_0244.jpg', 'DSC_0052.jpg', 'DSC_0454.jpg.info', 'DSC_0297.jpg', 'DSC_0850.jpg', 'DSC_0588.jpg', 'DSC_0231.jpg.info', 'DSC_0674.jpg', 'DSC_0307.jpg.info', 'DSC_0238.jpg.info', 'DSC_0773.jpg.info', 'DSC_0535.jpg', 'DSC_0152.jpg.info', 'DSC_0674.jpg.info', 'DSC_0689.jpg', 'DSC_0313.jpg.info', 'DSC_0280.jpg', 'DSC_0233.jpg', 'DSC_0232.jpg', 'DSC_0264.jpg.info', 'DSC_0233.jpg.info', 'DSC_0244.jpg.info', 'DSC_0225.jpg.info', 'DSC_0400.jpg', 'DSC_0397.jpg', 'DSC_0628.jpg.info', 'DSC_0043.jpg.info', 'DSC_0756.jpg.info', 'DSC_0697.jpg.info', 'DSC_0697.jpg', 'DSC_0349.jpg', 'DSC_0519.jpg.info', 'DSC_0397.jpg.info', 'DSC_0680.jpg.info', 'DSC_0052.jpg.info', 'DSC_0526.jpg', 'chapter.name', 'DSC_0477.jpg', 'DSC_0605.jpg', 'DSC_0520.jpg', 'DSC_0164.jpg', 'DSC_0464.jpg.info', 'DSC_0464.jpg', 'DSC_0881.jpg.info', 'DSC_0093.jpg.info', 'DSC_0593.jpg.info', 'DSC_0887.jpg.info', 'DSC_1500.jpg', 'DSC_0171.jpg.info', 'DSC_0056.jpg', 'DSC_0614.jpg', 'DSC_0261.jpg', 'DSC_0261.jpg.info', 'DSC_1500.jpg.info', 'DSC_0291.jpg.info', 'DSC_0231.jpg', 'DSC_0614.jpg.info', 'DSC_0094.jpg.info', 'DSC_0417.jpg.info', 'DSC_0883.jpg', 'DSC_0453.jpg.info', 'DSC_0238.jpg', 'DSC_0043.jpg', 'DSC_0638.jpg', 'DSC_0477.jpg.info', 'DSC_0857.jpg', 'DSC_0520.jpg.info', 'DSC_0696.jpg.info', 'DSC_0349.jpg.info', 'DSC_0213.jpg', 'DSC_0172.jpg.info', 'DSC_0689.jpg.info', 'DSC_0037.jpg.info', 'DSC_0225.jpg', 'DSC_0280.jpg.info', 'DSC_0510.jpg.info', 'DSC_0228.jpg', 'DSC_0519.jpg', 'DSC_0517.jpg.info', 'DSC_0307.jpg', 'DSC_0628.jpg', 'DSC_0831.jpg.info', 'DSC_0425.jpg', 'DSC_0857.jpg.info', 'DSC_0163.jpg.info', 'chapter.order', 'DSC_0217.jpg', 'DSC_0324.jpg', 'DSC_0037.jpg', 'DSC_0542.jpg', 'DSC_0425.jpg.info', 'DSC_0198.jpg.info', 'DSC_0056.jpg.info', 'DSC_0239.jpg', 'DSC_0756.jpg', 'DSC_0264.jpg', 'DSC_0781.jpg.info', 'DSC_0638.jpg.info', 'DSC_0680.jpg', 'DSC_0550.jpg.info', 'DSC_0320.jpg.info', 'DSC_1501.jpg', 'DSC_0453.jpg', 'DSC_0152.jpg', 'DSC_0184.jpg.info', 'DSC_0297.jpg.info', 'DSC_0588.jpg.info', 'DSC_0360.jpg.info', 'DSC_0887.jpg', 'DSC_0240.jpg.info', 'DSC_0672.jpg', 'DSC_0254.jpg.info', 'DSC_0605.jpg.info', 'DSC_0198.jpg', 'DSC_0559.jpg.info', 'DSC_0500.jpg', 'DSC_0526.jpg.info', 'DSC_0773.jpg', 'DSC_0550.jpg', 'DSC_0517.jpg', 'DSC_0837.jpg', 'DSC_0339.jpg.info', 'DSC_0883.jpg.info', 'DSC_0171.jpg', 'DSC_0315.jpg.info', 'DSC_0239.jpg.info', 'DSC_0449.jpg', 'DSC_0360.jpg', 'DSC_0035.jpg', 'DSC_0881.jpg', 'DSC_0083.jpg.info', 'DSC_0535.jpg.info', 'DSC_0542.jpg.info', 'DSC_0642.jpg', 'DSC_0593.jpg', 'DSC_0213.jpg.info', 'DSC_0456.jpg', 'DSC_0672.jpg.info', 'DSC_0834.jpg.info', 'DSC_0855.jpg.info', 'DSC_0831.jpg', 'DSC_0172.jpg', 'DSC_0696.jpg', 'DSC_0083.jpg', 'DSC_0163.jpg', 'DSC_0400.jpg.info', 'DSC_0417.jpg', 'DSC_0850.jpg.info', 'DSC_0617.jpg.info', 'DSC_0834.jpg', 'DSC_0254.jpg', 'DSC_0164.jpg.info', 'DSC_0500.jpg.info', 'DSC_0320.jpg', 'DSC_0094.jpg', 'DSC_0454.jpg', 'DSC_0617.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['DSC_0035.jpg', 'DSC_0037.jpg', 'DSC_0043.jpg', 'DSC_0052.jpg', 'DSC_0056.jpg', 'DSC_0083.jpg', 'DSC_0093.jpg', 'DSC_0094.jpg', 'DSC_0152.jpg', 'DSC_0163.jpg', 'DSC_0164.jpg', 'DSC_0171.jpg', 'DSC_0172.jpg', 'DSC_0184.jpg', 'DSC_0198.jpg', 'DSC_0213.jpg', 'DSC_0217.jpg', 'DSC_0225.jpg', 'DSC_0228.jpg', 'DSC_0231.jpg', 'DSC_0232.jpg', 'DSC_0233.jpg', 'DSC_0238.jpg', 'DSC_0239.jpg', 'DSC_0240.jpg', 'DSC_0244.jpg', 'DSC_0254.jpg', 'DSC_0261.jpg', 'DSC_0264.jpg', 'DSC_0280.jpg', 'DSC_0291.jpg', 'DSC_0297.jpg', 'DSC_0307.jpg', 'DSC_0313.jpg', 'DSC_0315.jpg', 'DSC_0320.jpg', 'DSC_0324.jpg', 'DSC_0339.jpg', 'DSC_0349.jpg', 'DSC_0360.jpg', 'DSC_0397.jpg', 'DSC_0400.jpg', 'DSC_0417.jpg', 'DSC_0425.jpg', 'DSC_0449.jpg', 'DSC_0453.jpg', 'DSC_0454.jpg', 'DSC_0456.jpg', 'DSC_0464.jpg', 'DSC_0477.jpg', 'DSC_0500.jpg', 'DSC_0510.jpg', 'DSC_0517.jpg', 'DSC_0519.jpg', 'DSC_0520.jpg', 'DSC_0526.jpg', 'DSC_0535.jpg', 'DSC_0542.jpg', 'DSC_0550.jpg', 'DSC_0559.jpg', 'DSC_0588.jpg', 'DSC_0593.jpg', 'DSC_0605.jpg', 'DSC_0614.jpg', 'DSC_0617.jpg', 'DSC_0628.jpg', 'DSC_0638.jpg', 'DSC_0642.jpg', 'DSC_0672.jpg', 'DSC_0674.jpg', 'DSC_0680.jpg', 'DSC_0689.jpg', 'DSC_0696.jpg', 'DSC_0697.jpg', 'DSC_0756.jpg', 'DSC_0773.jpg', 'DSC_0781.jpg', 'DSC_0831.jpg', 'DSC_0834.jpg', 'DSC_0837.jpg', 'DSC_0850.jpg', 'DSC_0855.jpg', 'DSC_0857.jpg', 'DSC_0881.jpg', 'DSC_0883.jpg', 'DSC_0887.jpg', 'DSC_1500.jpg', 'DSC_1501.jpg']
+INFO:	Processing File: 77	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0035.jpg
+INFO:	Processing File: 78	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0037.jpg
+INFO:	Processing File: 79	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0043.jpg
+INFO:	Processing File: 80	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0052.jpg
+INFO:	Processing File: 81	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0056.jpg
+INFO:	Processing File: 82	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0083.jpg
+INFO:	Processing File: 83	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0093.jpg
+INFO:	Processing File: 84	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0094.jpg
+INFO:	Processing File: 85	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0152.jpg
+INFO:	Processing File: 86	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0163.jpg
+INFO:	Processing File: 87	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0164.jpg
+INFO:	Processing File: 88	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0171.jpg
+INFO:	Processing File: 89	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0172.jpg
+INFO:	Processing File: 90	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0184.jpg
+INFO:	Processing File: 91	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0198.jpg
+INFO:	Processing File: 92	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0213.jpg
+INFO:	Processing File: 93	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0217.jpg
+INFO:	Processing File: 94	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0225.jpg
+INFO:	Processing File: 95	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0228.jpg
+INFO:	Processing File: 96	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0231.jpg
+INFO:	Processing File: 97	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0232.jpg
+INFO:	Processing File: 98	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0233.jpg
+INFO:	Processing File: 99	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0238.jpg
+INFO:	Processing File: 100	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0239.jpg
+INFO:	Processing File: 101	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0240.jpg
+INFO:	Processing File: 102	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0244.jpg
+INFO:	Processing File: 103	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0254.jpg
+INFO:	Processing File: 104	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0261.jpg
+INFO:	Processing File: 105	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0264.jpg
+INFO:	Processing File: 106	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0280.jpg
+INFO:	Processing File: 107	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0291.jpg
+INFO:	Processing File: 108	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0297.jpg
+INFO:	Processing File: 109	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0307.jpg
+INFO:	Processing File: 110	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0313.jpg
+INFO:	Processing File: 111	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0315.jpg
+INFO:	Processing File: 112	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0320.jpg
+INFO:	Processing File: 113	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0324.jpg
+INFO:	Processing File: 114	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0339.jpg
+INFO:	Processing File: 115	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0349.jpg
+INFO:	Processing File: 116	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0360.jpg
+INFO:	Processing File: 117	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0397.jpg
+INFO:	Processing File: 118	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0400.jpg
+INFO:	Processing File: 119	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0417.jpg
+INFO:	Processing File: 120	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0425.jpg
+INFO:	Processing File: 121	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0449.jpg
+INFO:	Processing File: 122	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0453.jpg
+INFO:	Processing File: 123	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0454.jpg
+INFO:	Processing File: 124	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0456.jpg
+INFO:	Processing File: 125	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0464.jpg
+INFO:	Processing File: 126	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0477.jpg
+INFO:	Processing File: 127	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0500.jpg
+INFO:	Processing File: 128	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0510.jpg
+INFO:	Processing File: 129	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0517.jpg
+INFO:	Processing File: 130	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0519.jpg
+INFO:	Processing File: 131	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0520.jpg
+INFO:	Processing File: 132	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0526.jpg
+INFO:	Processing File: 133	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0535.jpg
+INFO:	Processing File: 134	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0542.jpg
+INFO:	Processing File: 135	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0550.jpg
+INFO:	Processing File: 136	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0559.jpg
+INFO:	Processing File: 137	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0588.jpg
+INFO:	Processing File: 138	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0593.jpg
+INFO:	Processing File: 139	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0605.jpg
+INFO:	Processing File: 140	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0614.jpg
+INFO:	Processing File: 141	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0617.jpg
+INFO:	Processing File: 142	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0628.jpg
+INFO:	Processing File: 143	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0638.jpg
+INFO:	Processing File: 144	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0642.jpg
+INFO:	Processing File: 145	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0672.jpg
+INFO:	Processing File: 146	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0674.jpg
+INFO:	Processing File: 147	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0680.jpg
+INFO:	Processing File: 148	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0689.jpg
+INFO:	Processing File: 149	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0696.jpg
+INFO:	Processing File: 150	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0697.jpg
+INFO:	Processing File: 151	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0756.jpg
+INFO:	Processing File: 152	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0773.jpg
+INFO:	Processing File: 153	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0781.jpg
+INFO:	Processing File: 154	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0831.jpg
+INFO:	Processing File: 155	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0834.jpg
+INFO:	Processing File: 156	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0837.jpg
+INFO:	Processing File: 157	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0850.jpg
+INFO:	Processing File: 158	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0855.jpg
+INFO:	Processing File: 159	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0857.jpg
+INFO:	Processing File: 160	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0881.jpg
+INFO:	Processing File: 161	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0883.jpg
+INFO:	Processing File: 162	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_0887.jpg
+INFO:	Processing File: 163	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_1500.jpg
+INFO:	Processing File: 164	bilderStrukturen/_Chorserv/ChorservBilderStruktur/d_Konzertreise2013/DSC_1501.jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013', [], ['DSC_0120.jpg.info', 'DSC_0035.jpg.info', 'DSC_0025.jpg', 'DSC_0066.jpg.info', 'DSC_0084.jpg', 'DSC_0136.jpg', 'DSC_0101.jpg', 'DSC_0032.jpg', 'DSC_0048.jpg.info', 'DSC_0059.jpg.info', 'DSC_0063.jpg.info', 'DSC_0110.jpg.info', 'chapter.name', 'DSC_0101.jpg.info', 'DSC_0063.jpg', 'DSC_0066.jpg', 'DSC_0031.jpg', 'DSC_0094.jpg.info', 'DSC_0136.jpg.info', 'DSC_0032.jpg.info', 'DSC_0021.jpg', 'DSC_0045.jpg', 'chapter.order', 'DSC_0048.jpg', 'DSC_0025.jpg.info', 'DSC_0110.jpg', 'DSC_0079.jpg', 'DSC_0064.jpg', 'DSC_0029.jpg', 'DSC_0021.jpg.info', 'DSC_0079.jpg.info', 'DSC_0036.jpg.info', 'DSC_0071.jpg.info', 'DSC_0064.jpg.info', 'DSC_0045.jpg.info', 'DSC_0084.jpg.info', 'DSC_0071.jpg', 'DSC_0035.jpg', 'DSC_0029.jpg.info', 'DSC_0036.jpg', 'DSC_0120.jpg', 'DSC_0031.jpg.info', 'DSC_0059.jpg', 'DSC_0094.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['DSC_0021.jpg', 'DSC_0025.jpg', 'DSC_0029.jpg', 'DSC_0031.jpg', 'DSC_0032.jpg', 'DSC_0035.jpg', 'DSC_0036.jpg', 'DSC_0045.jpg', 'DSC_0048.jpg', 'DSC_0059.jpg', 'DSC_0063.jpg', 'DSC_0064.jpg', 'DSC_0066.jpg', 'DSC_0071.jpg', 'DSC_0079.jpg', 'DSC_0084.jpg', 'DSC_0094.jpg', 'DSC_0101.jpg', 'DSC_0110.jpg', 'DSC_0120.jpg', 'DSC_0136.jpg']
+INFO:	Processing File: 165	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0021.jpg
+INFO:	Processing File: 166	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0025.jpg
+INFO:	Processing File: 167	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0029.jpg
+INFO:	Processing File: 168	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0031.jpg
+INFO:	Processing File: 169	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0032.jpg
+INFO:	Processing File: 170	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0035.jpg
+INFO:	Processing File: 171	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0036.jpg
+INFO:	Processing File: 172	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0045.jpg
+INFO:	Processing File: 173	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0048.jpg
+INFO:	Processing File: 174	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0059.jpg
+INFO:	Processing File: 175	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0063.jpg
+INFO:	Processing File: 176	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0064.jpg
+INFO:	Processing File: 177	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0066.jpg
+INFO:	Processing File: 178	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0071.jpg
+INFO:	Processing File: 179	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0079.jpg
+INFO:	Processing File: 180	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0084.jpg
+INFO:	Processing File: 181	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0094.jpg
+INFO:	Processing File: 182	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0101.jpg
+INFO:	Processing File: 183	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0110.jpg
+INFO:	Processing File: 184	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0120.jpg
+INFO:	Processing File: 185	bilderStrukturen/_Chorserv/ChorservBilderStruktur/e_Ravensburg2013/DSC_0136.jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012', [], ['P1150608.jpg', 'P1150231.jpg.info', 'P1150117.jpg.info', 'P1150056.jpg', 'P1150266.jpg', 'P1150034.jpg', 'P1150596.jpg.info', 'P1150106.jpg.info', 'P1150288.jpg', 'P1150087.jpg', 'P1150103.jpg.info', 'chapter.name', 'P1150596.jpg', 'P1150018.jpg.info', 'P1150056.jpg.info', 'P1150608.jpg.info', 'P1150176.jpg.info', 'P1150248.jpg.info', 'P1150301.jpg', 'P1150176.jpg', 'P1150606.jpg.info', 'P1150498.jpg.info', 'P1150582.jpg.info', 'P1150153.jpg', 'P1150231.jpg', 'P1150239.jpg.info', 'P1150022.jpg', 'P1150008.jpg', 'P1150606.jpg', 'chapter.order', 'P1150407.jpg.info', 'P1150187.jpg.info', 'P1150034.jpg.info', 'P1150248.jpg', 'P1150153.jpg.info', 'P1150239.jpg', 'P1150662.jpg.info', 'P1150288.jpg.info', 'P1150498.jpg', 'P1150582.jpg', 'P1150087.jpg.info', 'P1150187.jpg', 'P1150018.jpg', 'P1150662.jpg', 'P1150301.jpg.info', 'P1150263.jpg', 'P1150008.jpg.info', 'P1150117.jpg', 'P1150266.jpg.info', 'P1150022.jpg.info', 'P1150407.jpg', 'P1150263.jpg.info', 'P1150103.jpg', 'P1150106.jpg'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['P1150008.jpg', 'P1150018.jpg', 'P1150022.jpg', 'P1150034.jpg', 'P1150056.jpg', 'P1150087.jpg', 'P1150103.jpg', 'P1150106.jpg', 'P1150117.jpg', 'P1150153.jpg', 'P1150176.jpg', 'P1150187.jpg', 'P1150231.jpg', 'P1150239.jpg', 'P1150248.jpg', 'P1150263.jpg', 'P1150266.jpg', 'P1150288.jpg', 'P1150301.jpg', 'P1150407.jpg', 'P1150498.jpg', 'P1150582.jpg', 'P1150596.jpg', 'P1150606.jpg', 'P1150608.jpg', 'P1150662.jpg']
+INFO:	Processing File: 186	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150008.jpg
+INFO:	Processing File: 187	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150018.jpg
+INFO:	Processing File: 188	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150022.jpg
+INFO:	Processing File: 189	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150034.jpg
+INFO:	Processing File: 190	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150056.jpg
+INFO:	Processing File: 191	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150087.jpg
+INFO:	Processing File: 192	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150103.jpg
+INFO:	Processing File: 193	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150106.jpg
+INFO:	Processing File: 194	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150117.jpg
+INFO:	Processing File: 195	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150153.jpg
+INFO:	Processing File: 196	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150176.jpg
+INFO:	Processing File: 197	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150187.jpg
+INFO:	Processing File: 198	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150231.jpg
+INFO:	Processing File: 199	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150239.jpg
+INFO:	Processing File: 200	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150248.jpg
+INFO:	Processing File: 201	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150263.jpg
+INFO:	Processing File: 202	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150266.jpg
+INFO:	Processing File: 203	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150288.jpg
+INFO:	Processing File: 204	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150301.jpg
+INFO:	Processing File: 205	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150407.jpg
+INFO:	Processing File: 206	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150498.jpg
+INFO:	Processing File: 207	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150582.jpg
+INFO:	Processing File: 208	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150596.jpg
+INFO:	Processing File: 209	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150606.jpg
+INFO:	Processing File: 210	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150608.jpg
+INFO:	Processing File: 211	bilderStrukturen/_Chorserv/ChorservBilderStruktur/f_Konzertreise2012/P1150662.jpg
+[('bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011', [], ['DSCF2112.jpg', 'DSCF2077.jpg', 'DSCF2100.jpg', 'DSCF2357.jpg.info', 'DSCF2115.jpg.info', 'DSCF2044.jpg.info', 'DSCF2026.jpg', 'DSCF2103.jpg', 'chapter.name', 'DSCF2047.jpg', 'DSCF2100.jpg.info', 'DSCF2066.jpg', 'DSCF2044.jpg', 'DSCF2046.jpg', 'DSCF2357.jpg', 'DSCF2112.jpg.info', 'DSCF2077.jpg.info', 'chapter.order', 'DSCF2047.jpg.info', 'DSCF2080.jpg', 'DSCF2046.jpg.info', 'DSCF2026.jpg.info', 'DSCF2103.jpg.info', 'DSCF2115.jpg', 'DSCF2066.jpg.info', 'DSCF2080.jpg.info'])]
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Preprocessing folder
+INFO:	Detected chapter.order file in Struktur: Overriding alphanumerical sort
+['DSCF2026.jpg', 'DSCF2044.jpg', 'DSCF2046.jpg', 'DSCF2047.jpg', 'DSCF2066.jpg', 'DSCF2077.jpg', 'DSCF2080.jpg', 'DSCF2100.jpg', 'DSCF2103.jpg', 'DSCF2112.jpg', 'DSCF2115.jpg', 'DSCF2357.jpg']
+INFO:	Processing File: 212	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2026.jpg
+INFO:	Processing File: 213	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2044.jpg
+INFO:	Processing File: 214	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2046.jpg
+INFO:	Processing File: 215	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2047.jpg
+INFO:	Processing File: 216	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2066.jpg
+INFO:	Processing File: 217	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2077.jpg
+INFO:	Processing File: 218	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2080.jpg
+INFO:	Processing File: 219	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2100.jpg
+INFO:	Processing File: 220	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2103.jpg
+INFO:	Processing File: 221	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2112.jpg
+INFO:	Processing File: 222	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2115.jpg
+INFO:	Processing File: 223	bilderStrukturen/_Chorserv/ChorservBilderStruktur/g_Konzertreise2011/DSCF2357.jpg
+INFO:	Writing Struktur to bilderStrukturen/Chorserv.json
+INFO:	Done. Exiting

@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Das Chorserver Backend. Sämtliche Änderungen am Chorserv-Inhalt werden über dieses Backend abgewickelt.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Georg Grab",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "connect-busboy": "0.0.2",
+    "express": "^4.13.3",
+    "randomstring": "^1.1.4"
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html ng-app="backend">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="static/navigation.js"></script>
+	<script src="static/moment.min.js"></script>
+	<script src="static/codemirror-5.10/lib/codemirror.js"></script>
+	<script src="static/codemirror-5.10/mode/javascript/javascript.js"></script>
+	<link rel="stylesheet" href="static/codemirror-5.10/lib/codemirror.css">
+	<link rel="stylesheet" href="static/codemirror-5.10/theme/solarized.css">
+	<link rel="stylesheet" href="static/normalize.css">
+	<link rel="stylesheet" href="static/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="NavigationController as nav">
+<header>
+	<h1>Chorsite Backend</h1>
+	<h2>Sprint 4 von 7, v0.04/h2>
+</header>
+<div ng-show="nav.showNavigation()" class="section_collection">
+	<section id="kalender" ng-click="nav.activate(nav.CALENDAR)" class="implemented">
+		<h1>Kalender</h1>
+		<h2>Kalendereinträge modifizieren</h2>
+	</section>
+	<section ng-click="nav.activate(nav.BILDER)" class="implemented">
+		<h1>Bilder</h1>
+		<h2>Bilder hinzufügen, löschen, modifizieren</h2>
+	</section>
+	<section ng-click="nav.activate(nav.NEWSTICKER)" class="implemented">
+		<h1>Newsticker</h1>
+		<h2>Newsticker auf der Startseite verändern</h2>
+	</section>
+	<section class="notimplemented">
+		<h1>Texte</h1>
+		<h2>Übersetzungen und Texte modifizieren</h2>
+	</section>
+	<section class="notimplemented">
+		<h1>Serverhealth</h1>
+		<h2>Serverkomponenten überprüfen</h2>
+	</section>
+	<section class="notimplemented">
+		<h1>Background</h1>
+		<h2>Zugriff auf Chorsite-IMGGEN</h2>
+	</section>
+	<section ng-click="nav.activate(nav.IDE)" class="implemented">
+		<h1>Chorsite-IDE</h1>
+		<h2>Zugriff auf Integrierte Entwicklungsumgebung</h2>
+	</section>
+</div>
+<div class="sections">
+	<section ng-controller="KalenderController as cal" ng-show="nav.isActive(nav.CALENDAR)">
+		<div class="kalender">
+			<ul class="entry-list">
+				<li class="bar">
+					<span ng-click="nav.activate(nav.DEFAULT)" class="back noselect">&#8592;</span>
+					<span ng-click="toggleNeuerTermin()" class="new-item-btn noselect">neuen termin erstellen</span>
+					<span class="num-entries noselect">{{entries()}}</span>
+				</li>
+				<li ng-show="neuerTermin" class="neuer-termin">
+					<form name="newItemForm">
+					<div class="col">
+						<input name="date" ng-model="newItem.date" class="datum" type="date" required>
+						<div class="error error-{{validateInput(0)}}"></div>
+					</div>
+					<div class="col">
+					<input name="time"  ng-model="newItem.time" type="time" required>
+						<div class="error error-{{validateInput(1)}}"></div>
+					</div>
+					<div class="col">
+					<input name="title"  ng-model="newItem.title" type="text" placeholder="Titel" required>
+						<div class="error error-{{validateInput(2)}}"></div>
+					</div>
+					<div class="col">
+					<input name="loc" ng-model="newItem.loc" type="text" placeholder="Ort" required>
+						<div class="error error-{{validateInput(3)}}"></div>
+					</div>
+					<div ng-click="add()" ng-show="allInputsValid()" class="deploybutton noselect">DEPLOY</div>
+					</form>
+				</li>
+				<li class="before-now-{{isBeforeNow(entry.date)}}" ng-repeat="entry in getEntryDatabase()">
+					<span ng-click="rm(entry)" class="del noselect">x</span>
+					<span class="date ">{{entry.date.format("DD.MM.YYYY")}}</span>
+					<span class="time">{{entry.time}}</span>
+					<span class="title">{{entry.title}}</span>
+					<span class="location">{{entry.location}}</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section ng-controller="NewstickerController as news" ng-show="nav.isActive(nav.NEWSTICKER)">
+		<div class="newsticker">
+			<ul class="entry-list">
+				<li class="bar">
+					<span ng-click="nav.activate(nav.DEFAULT)" class="back noselect">&#8592;</span>
+					<span ng-click="addNews()" class="new-item-btn noselect">neuen ticker erstellen</span>
+					<span ng-click="saveNews()" class="new-item-btn error-true noselect">konfiguration abspeichern</span>
+				</li>
+				<li class="newstickeradd" ng-repeat="entry in getNewsticker() track by $index">
+					<span ng-click="rm($index)" class="del noselect">x</span>
+								<input class="newstickerinput" type="text" ng-model="ticker[$index]">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section ng-controller="IDEController as ide" ng-show="nav.isActive(nav.IDE)">
+		<div class="ide">
+			<ul class="entry-list">
+				<span ng-click="nav.activate(nav.DEFAULT)" class="back noselect">&#8592;</span>
+				<span ng-click="" class="noselect">server</span>
+				<span ng-click="" class="noselect">statik</span>
+				<span ng-click="" class="noselect">backend</span>
+				<span ng-click="" class="noselect">deploy auf TEST1</span>
+				<span ng-click="" class="noselect">deploy auf PROD</span>
+			</ul>
+			<textarea id="codemirror"></textarea>
+		</div>
+	</section>
+	<section ng-controller="IMGController as img" ng-show="nav.isActive(nav.BILDER)">
+		<div class="img">
+			<ul class="entry-list">
+				<li class="bar">
+					<span ng-click="nav.activate(nav.DEFAULT)" class="back noselect">&#8592;</span>
+					<span ng-click="reload()" class="new-item-btn noselect">BildStrukturen neu laden</span>
+					<form ng-submit="submit()" method="post" action="/bilder/upl" enctype="multipart/form-data"><input id="file" class="fileupload" name="file" type="file"/>
+					<span ng-click="submit()" class="new-item-btn style1 noselect">datei laden</span></form>
+				</li>
+				<li ng-repeat="entry in getBildStrukturen() track by $index" class="bildstrukturen" style="{{axxclass(entry)}}">
+					<span ng-click="setProd(entry)" class="noselect img-btn {{isProd(entry)}}">PROD</span>
+					<span ng-click="axx(entry)" class="noselect img-btn img-btn-axx">AXX</span>
+					<span ng-click="mrg(entry)" class="noselect img-btn {{isNotProd(entry)}}">MRG</span>
+					<span class="noselect img-btn {{isNotProd(entry)}}">DEL</span>
+					<span class="struktur-title">{{entry}}</span>
+					<div ng-show="hasaxx(entry)" class="bild_inner">
+						<ul class="subul">
+							<li class="bildstrukturen" ng-repeat="inner in axxList(entry)">
+								<span ng-click="deltransaction(entry, inner)" class="noselect img-btn">DEL</span>	
+								<span class="thing-name">{{inner}}</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="bbar">
+				<span id="transaction_status">
+					no transaction
+				</span>
+				<div id="console">kein output</div>
+				</div>
+				<div ng-show="commitTransaction" class="dialog">
+					<div class="head">
+						<h1>transaction <span id="transaction_name">{{transactionName}}</span></h1>	
+					</div>	
+					<div class="dbdy">
+						Transaktion speichern als: <input ng-model="tSaveAs" type="text" id="fname"><br/>
+						Production: <input type="checkbox" ng-model="tProd">
+					</div>
+					<div class="decide">
+						<div ng-click="dialogCommitTransaction()" class="ok">commit transaction</div>
+						<div ng-click="commitTransaction = false" class="abrt">abort transaction</div>
+					</div>
+				</div>
+				<div ng-show="showDialog" class="dialog">
+					<div class="head">
+						<h1>{{dialogTitle}}</h1>	
+					</div>	
+					<div class="dbdy">
+					{{dialogBody}}
+					</div>
+					<div class="decide">
+						<div ng-click="_dialogOK()" class="ok">commit transaction</div>
+						<div ng-click="showDialog = false" class="abrt">abort transaction</div>
+					</div>
+				</div>
+			<div ng-show="img.Struktur"
+		</div>
+	</section>
+</div>
+</body>
+</html>
