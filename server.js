@@ -47,7 +47,7 @@ fs.readFile(__dirname + config.data.dataDirectory + config.data.locations.newsti
 function writeEventsJson(){
 	// Save Changes
 	// Evtl. erst später speichern. also call auf writeFile erst bei klick auf einen "Deploy" - Button ausführen, oder so
-	fs.writeFile(__dirname + config.data.dataDirectory + config.locations.calendar, JSON.stringify(eventsJson), function(error){
+	fs.writeFile(__dirname + config.data.dataDirectory + config.data.locations.calendar, JSON.stringify(eventsJson), function(error){
 		if(error){
 			return console.error(error);
 		}
@@ -56,7 +56,7 @@ function writeEventsJson(){
 }
 
 function writeNewstickerJson(){
-	fs.writeFile(__dirname + config.data.dataDirectory + config.locations.newsticker, JSON.stringify(newstickerJson), function(error){
+	fs.writeFile(__dirname + config.data.dataDirectory + config.data.locations.newsticker, JSON.stringify(newstickerJson), function(error){
 		if(error){
 			return console.error(error);
 		}
@@ -66,12 +66,7 @@ function writeNewstickerJson(){
 
 
 kalender.get("/get", function(request, response){
-	// TODO echo KALENDER JSON FILE
-	console.info("In /kalender/get");
-
 	response.end(JSON.stringify(eventsJson));
-
-
 });
 
 var jsonParser = bodyParser.json();
@@ -168,7 +163,6 @@ kalender.post("/rm", jsonParser, function(request, response){
 });
 
 newsticker.get("/get", function(request, response){
-	console.log("In /newsticker/get");
 	response.end(JSON.stringify(newstickerJson));
 
 });
