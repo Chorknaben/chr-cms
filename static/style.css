@@ -32,6 +32,16 @@ body{
 	margin-bottom:200px;
 }
 
+span.img-up{
+	background:#34dd21;
+}
+span.img-down{
+	background:#654599;
+}
+span.img-down:last-of-type{
+	display:none;
+}
+
 .section_collection section{
 	width:250px;
 	border:1px solid black;

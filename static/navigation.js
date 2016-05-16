@@ -274,6 +274,27 @@ angular.module("backend", [])
 				$scope.performPresseQuery();
 			});
 		}
+		$scope.up = function(url){
+			$rootScope.$broadcast('setTransaction', 'transact.mv -1');
+			$http.post("/presse/articles/up?url=" + url).success(function(s){
+				$rootScope.$broadcast('setTransaction', 'move OK');
+				$scope.performPresseQuery();
+			}).error(function(e){
+				$rootScope.$broadcast('setTransaction', 'move FAIL');
+				$scope.performPresseQuery();
+			});
+		}
+		$scope.down = function(url){
+			$rootScope.$broadcast('setTransaction', 'transact.mv +1');
+			$http.post("/presse/articles/down?url=" + url).success(function(s){
+				$rootScope.$broadcast('setTransaction', 'move OK');
+				$scope.performPresseQuery();
+			}).error(function(e){
+				$rootScope.$broadcast('setTransaction', 'move FAIL');
+				$scope.performPresseQuery();
+			});
+
+		}
 		$scope.submit = function(){
 			if ($scope.data){
 				// todo do in angular style
@@ -290,9 +311,9 @@ angular.module("backend", [])
 							);
 					console.log(uri);
 					return fileUpload.uploadFileToUrl(f, uri, function(suc){
-					 	alert("upl ok");
+						$rootScope.$broadcast('setTransaction', 'OK!');
 					 }, function(fail){
-					 	alert("fail");
+						$rootScope.$broadcast('setTransaction', 'Failed!');
 					});
 				} else {
 					console.log($scope.data);

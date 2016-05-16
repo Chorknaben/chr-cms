@@ -142,10 +142,12 @@
 				</li>
 				<li ng-repeat="entry in getPresse() track by $index" class="pressestruktur">
 					<span ng-click="del(entry.url)" class="noselect img-btn">DEL</span>
+					<span ng-show="$index != 0" ng-click="up(entry.url)" class="noselect img-btn img-btn-active">&uarr;</span>
+					<span ng-show="$index != getPresse().length - 1" ng-click="down(entry.url)" class="noselect img-btn img-btn-axx">&darr;</span>
 					<span class="struktur-title">{{entry.caption}}</span>
 					<span>{{entry.date}}</span>
-					<span>{{entry.name}}</span>
-					<span>{{entry.url}}</span>
+					<span class="struktur-title">{{entry.name}}</span>
+					<span><a target="_blank" href="/static/{{entry.url}}">{{entry.url}}</span>
 				</li>
 			</ul>
 		</div>

@@ -210,6 +210,45 @@ presse.get("/articles", function(request, response){
 	response.end(JSON.stringify(readJson("presse.json").presse));
 });
 
+presse.post("/articles/up", function(request, response){
+	var url = request.query.url;
+	if (url){
+		var json = readJson("presse.json");
+		if (json.presse[0].url != url){
+			for (var i = 0; i<json.presse.length;i++){
+				if (json.presse[i].url == url){
+					var el = json.presse.splice(i, 1);
+					json.presse.splice(i-1, 0, el[0]);
+					writeJson("presse.json", json);
+					return response.end("ok");
+				}
+			}
+		}
+	}
+	response.end("err");
+});
+
+presse.post("/articles/down", function(request, response){
+	var url = request.query.url;
+	console.log(request.query);
+	if (url){
+		var json = readJson("presse.json");
+		if (json.presse[json.presse.length - 1].url != url){
+			for (var i = 0; i<json.presse.length;i++){
+				if (json.presse[i].url == url){
+					var el = json.presse.splice(i, 1);
+					json.presse.splice(i+1, 0, el[0]);
+					writeJson("presse.json", json);
+					return response.end("ok");
+				}
+			}
+		}
+	}
+	response.statusCode = 500;
+	response.end("err");
+
+});
+
 presse.post("/upl", function(request,response){
 	var fstream;
 	console.log(request.query);
