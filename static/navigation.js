@@ -1,4 +1,19 @@
 angular.module("backend", [])
+	.directive('compile', function($compile, $timeout){
+		return {
+			restrict : 'A',
+			link: function(scope, elem, attrs){
+				$timeout(function(){
+					$compile(elem.contents())(scope);
+				});		
+			}
+		}
+	})
+	.filter('to_trusted', ['$sce', function($sce){
+		return function(text){
+			return $sce.trustAsHtml(text);
+		}
+	}])
 	.controller("NavigationController", function(){
 		var nav = this;
 
@@ -10,6 +25,7 @@ angular.module("backend", [])
 		nav.BACKGROUND = 0x06;
 		nav.IDE = 0x07;
 		nav.DEFAULT = 0x00;
+		nav.PRESSE = 0x08;
 
 		nav.selectedElement = nav.DEFAULT;
 
@@ -185,6 +201,41 @@ angular.module("backend", [])
 	        .success(success).error(failure);
 	    }
 	}])
+	.controller('transact', function($scope){
+		$scope.showDialog = false;
+		$scope.dcall = null;
+		$scope.args = {};
+
+		$scope.$on("transactionRequest", function(event, arg){
+			$scope.transactionDialog(arg.title, arg.desc, function(){
+				return arg.onok($scope.args);
+			});
+		});
+
+		$scope.$on("setTransaction", function(event, arg){
+			$scope.setTransaction(arg);
+		})
+
+		$scope._dialogOK = function(){
+			$scope.dcall();
+			$scope.showDialog = false;
+		}
+		$scope.transactionDialog = function(title, desc, onok){
+			$scope.dialogTitle = title;
+			$scope.dialogBody = desc;
+			$scope.dcall = onok;
+			$scope.showDialog = true;
+		}
+		$scope.setTransaction = function(text){
+			document.getElementById("transaction_status").innerHTML = text;
+			$scope.addConsoleLine(text);
+		}
+		$scope.addConsoleLine = function(line){
+			var e =document.getElementById("console");
+			e.innerHTML = line + "<br/>" + e.innerHTML;
+		}
+
+	})
 	.controller("IDEController", function($scope, $http){
 		var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("codemirror"), {
 			mode: "javascript",
@@ -192,7 +243,76 @@ angular.module("backend", [])
 			theme: "solarized"
 		});
 	})
-	.controller("IMGController", function($scope, $http, fileUpload){
+		// $scope.submit = function(){
+		// 	var f = document.getElementById('file').files[0];
+		// 	$scope.setTransaction("Upload..");	
+		// 	fileUpload.uploadFileToUrl(f, "/bilder/upload", function(suc){
+		// 		$scope.setTransaction("Upload Complete.");	
+		// 		$scope.pollState();
+		// 	}, function(fail){
+		// 		$scope.setTransaction("Upload failed.");
+		// 	});
+
+		// 	if (f === null){
+		// 		alert("no file duh");
+		// 	} 
+		// }
+	.controller("PRSController", function($scope, $rootScope, $http, fileUpload){
+		$scope.presse = {}
+		$scope.data = {}
+
+		$scope.getPresse = function(){
+			return $scope.presse;
+		}	
+		$scope.del = function(what){
+			$rootScope.$broadcast('setTransaction', 'transact.delete');
+			$http.post("/presse/articles/delete?name=" + what).success(function(s){
+				$rootScope.$broadcast('setTransaction', 'delete ok');
+				$scope.performPresseQuery();
+			}).error(function(e){
+				$rootScope.$broadcast('setTransaction', 'delete failed');
+				$scope.performPresseQuery();
+			});
+		}
+		$scope.submit = function(){
+			if ($scope.data){
+				// todo do in angular style
+				if ($scope.data.caption && $scope.data.desc && $scope.data.date){
+					var f = document.getElementById('file_img').files[0];	
+					if (f === undefined){
+					 	return $rootScope.$broadcast('setTransaction', 'Error: Keine Datei');
+					}
+					$rootScope.$broadcast('setTransaction', 'Upload..');
+					var uri = "/presse/upl?name=" + encodeURIComponent($scope.data.desc) + "&caption=" +
+						encodeURIComponent($scope.data.caption) + "&date=" + encodeURIComponent(
+								$scope.data.date.getDate() + "." + $scope.data.date.getMonth() + "." +
+								$scope.data.date.getFullYear()
+							);
+					console.log(uri);
+					return fileUpload.uploadFileToUrl(f, uri, function(suc){
+					 	alert("upl ok");
+					 }, function(fail){
+					 	alert("fail");
+					});
+				} else {
+					console.log($scope.data);
+					$rootScope.$broadcast('setTransaction', 'Error: Alle Felder sind required');
+				}
+			}
+
+		}
+		$scope.performPresseQuery = function(){
+			$http.get("/presse/articles").success(function(s){
+				if (s){
+					$scope.presse = s;
+				}	
+			}).error(function(e){
+				alert(e);
+			});
+		}
+		$scope.performPresseQuery();
+	})
+	.controller("IMGController", function($scope, $rootScope, $http, fileUpload){
 		$scope.bildStrukturen = [];
 		$scope.meta = {}
 		$scope.pollInterval = null;
@@ -201,12 +321,12 @@ angular.module("backend", [])
 		$scope.tSaveAs = "";
 		$scope.axxL = {};
 
-		$scope.showDialog = false;
-		$scope.dcall = null;
-		$scope._dialogOK = function(){
-			$scope.dcall();
-			$scope.showDialog = false;
-		}
+		// $scope.showDialog = false;
+		// $scope.dcall = null;
+		// $scope._dialogOK = function(){
+		// 	$scope.dcall();
+		// 	$scope.showDialog = false;
+		// }
 		$scope.axx = function(structName){
 			if ($scope.hasaxx(structName)){
 				 delete $scope.axxL[structName];
@@ -219,10 +339,12 @@ angular.module("backend", [])
 			});
 		}
 		$scope.transactionDialog = function(title, desc, onok){
-			$scope.dialogTitle = title;
-			$scope.dialogBody = desc;
-			$scope.dcall = onok;
-			$scope.showDialog = true;
+		 	$rootScope.$broadcast('transactionRequest', {
+		 		title: title, desc: desc, onok: onok
+		 	});
+		}
+		$scope.setTransaction = function(name){
+			$rootScope.$broadcast('setTransaction', name);
 		}
 		$scope.axxclass = function(structName){
 			if($scope.hasaxx(structName)) return "height:initial;";
@@ -247,11 +369,11 @@ angular.module("backend", [])
 			})
 			.success(function(data){
 				if (data.err){
-					$scope.setTransaction("commit failed: " + data.err);
+					//$scope.setTransaction("commit failed: " + data.err);
 					console.warn(data);
 					return;
 				}
-				$scope.setTransaction("commit ok ("+ data.name +")");
+				//$scope.setTransaction("commit ok ("+ data.name +")");
 				$scope.commitTransaction = false;
 				$scope.reload();
 			})
@@ -375,12 +497,13 @@ angular.module("backend", [])
 		$scope.isNotProd = function(structName){
 			return structName !== $scope.meta["prod"]? "img-btn-active" : "img-btn-inactive"
 		}
-		$scope.setTransaction = function(text){
-			document.getElementById("transaction_status").innerHTML = text;
-			$scope.addConsoleLine(text);
-		}
-		$scope.addConsoleLine = function(line){
-			var e =document.getElementById("console");
-			e.innerHTML = line + "<br/>" + e.innerHTML;
-		}
+		// $scope.setTransaction = function(text){
+		// 	document.getElementById("transaction_status").innerHTML = text;
+		// 	$scope.addConsoleLine(text);
+		// }
+		// $scope.addConsoleLine = function(line){
+		// 	var e =document.getElementById("console");
+		// 	e.innerHTML = line + "<br/>" + e.innerHTML;
+		// }
+		$scope.reload();
 	});

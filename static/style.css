@@ -2,6 +2,13 @@ header{
 	height:100px;
 	background:black;
 }
+input{
+	color:black;
+}
+label{
+	display:inline-block;
+	width:100px;
+}
 header h1{
 	float: left;
     margin-left: 60px;
@@ -22,6 +29,7 @@ header h2{
 
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom:200px;
 }
 
 .section_collection section{
@@ -253,12 +261,24 @@ section h1{
     font-size: 3em;
 }
 
+.pressestruktur{
+	margin-left:20px;
+}
+
 .bbar{
     bottom: 0;
     height: 100px;
    background-color: black;
    width: 100%;
-	  position: absolute;
+	  position: fixed;
+}
+.dialog div.head{
+}
+.dialog div.dbdy{
+}
+
+#dialog_add_presse{
+
 }
 
 #console{
@@ -277,7 +297,7 @@ overflow:scroll;
     height: 120px;
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

@@ -31,6 +31,7 @@ dieUnlessConfigSupplied(config,
 var kalender = express.Router();
 var newsticker = express.Router();
 var bilder = express.Router();
+var presse =express.Router();
 
 var eventsJson;
 fs.readFile(__dirname + config.data.dataDirectory + config.data.locations.calendar , "utf8", function(err , data){
@@ -41,6 +42,7 @@ var newstickerJson;
 fs.readFile(__dirname + config.data.dataDirectory + config.data.locations.newsticker , "utf8", function(err , data){
 	newstickerJson = JSON.parse(data)
 });
+
 
 function writeEventsJson(){
 	// Save Changes
@@ -185,6 +187,91 @@ newsticker.post("/set", jsonParser, function(request, response){
 	}
 
 });
+
+function readJson(filename){
+	try {
+		var s = fs.readFileSync(__dirname + config.data.dataDirectory + "/json/" + filename, "utf8");
+		return JSON.parse(s);
+	} catch(error){
+		console.warn(error);
+		return null;
+	}
+}
+function writeJson(filename, json){
+	try {
+		fs.writeFileSync(__dirname + config.data.dataDirectory + "/json/" + filename, JSON.stringify(json));
+	} catch(error){
+		console.warn(error);
+		return null;
+	}
+}
+
+presse.get("/articles", function(request, response){
+	response.end(JSON.stringify(readJson("presse.json").presse));
+});
+
+presse.post("/upl", function(request,response){
+	var fstream;
+	console.log(request.query);
+	if (request.busboy && request.query.date && request.query.caption && request.query.name){
+		request.pipe(request.busboy);
+		request.busboy.on('file', function(fieldname, file, filename){
+			var len = 20 * readJson("presse.json").presse.length + 1;
+			console.log("write /temp/"+len);
+			filename = __dirname + "/temp/" + len;
+			fstream = fs.createWriteStream(filename)
+			file.pipe(fstream);
+			fstream.on('close', function(){
+				var r = readJson("presse.json");	
+				r.presse.unshift({
+					caption: request.query.caption,
+					date: request.query.date,
+					name: request.query.name,
+					url: '/presse/' + len
+				});
+				writeJson('presse.json', r);
+				console.log("Updated presse.json");
+
+				child_process.spawn('cp', [filename, 'dataSymlink/presse/real/' + len]);
+				child_process.spawn('cp', [filename, 'dataSymlink/presse/thumbs/' + len]);
+				console.log("Copied file");
+				response.end("ok");
+
+			})
+		})
+	} else {
+		response.statusCode = 500;
+		response.end("fail");
+	}
+})
+
+presse.post("/articles/delete", function(request,response){
+	if (request.query.name){
+		var prs = readJson("presse.json").presse;
+		console.log(prs);
+		console.log("Got query: " + request.query.name);
+		for (var i = 0; i < prs.length; i++){
+			if (prs[i].url == request.query.name){
+				console.log("Article exists. (found at idx="+i+") Del.");
+				var id = prs[i].url.substring(prs[i].url.lastIndexOf("/") + 1);
+				var deleted = prs.splice(i,1);
+				console.log(deleted);
+				try{
+					fs.unlinkSync(__dirname + config.data.dataDirectory + "/presse/real/" + id);
+					fs.unlinkSync(__dirname + config.data.dataDirectory + "/presse/thumbs/" + id);
+				} catch(error){
+					console.warn(error);
+				}
+				writeJson("presse.json", {presse: prs});
+
+				response.end("ok");
+			}
+		}	
+	} else {
+		response.statusCode = 404;
+		response.end("err");
+	}
+})
 
 var metaJson = {};
 function readMetaJson(){
@@ -350,7 +437,8 @@ bilder.get("/jobs", function (request, response){
 function littleJob(extrdir, cb){
 	// _dir modified, rebuild dir and reinstatiate symlink
 	// dir without trailing thing is meant
-	jobname = extrdir + "_rebuild"
+	jobname = extrdir + "_rebuild_" + randomstring.generate(10)
+
 	job_collection[jobname] = {}
 	job_collection[jobname].end = 0;
 
@@ -365,7 +453,6 @@ function littleJob(extrdir, cb){
 	var struktur = child_process.spawn(__dirname + "/" + config.requiredapps.struktur + "/struktur.py",
 		["-f", outF, "-w", outD, extracteddir + config.struktur.bilderDirectoryName]);	
 	struktur.stdout.pipe(strukturlog);
-	console.log(struktur);
 	struktur.on('close', (code) => {
 		job_collection[jobname].end = 1;
 		if (cb) cb();
@@ -394,14 +481,12 @@ function startStrukturJob(file, extrdir){
 		var struktur = child_process.spawn(__dirname + "/" + config.requiredapps.struktur + "/struktur.py",
 			["-f", outF, "-w", outD, extracteddir + config.struktur.bilderDirectoryName]);	
 		struktur.stdout.pipe(strukturlog);
-		console.log(struktur);
 		struktur.on('close', (code) => {
 			job_collection[file]["stage20"].exit = code;
 			if(code == 0){
 				// Nur randomstring segmente in job_collection laden, um path disclosure zu vermeiden....
 				humanVerification(file, _utF, _utD);
 			}
-			console.log(job_collection);
 		});
 
 	}
@@ -419,7 +504,6 @@ function startStrukturJob(file, extrdir){
 		if (code == 0){
 			verifyAndRunStruktur(file, dir);
 		}
-		console.log(job_collection);
 	});
 }
 
@@ -428,6 +512,7 @@ backend.use("/kalender", kalender);
 backend.use("/newsticker", newsticker);
 backend.use("/bilder", bilder);
 backend.use("/static", express.static(__dirname + "/static"));
+backend.use("/presse", presse);
 backend.get(["/", "/index.html"], function(request, response){
 	response.sendFile("index.html", {root : __dirname});
 })

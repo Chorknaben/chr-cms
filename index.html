@@ -2,7 +2,9 @@
 <html ng-app="backend">
 <head>
 	<meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="static/angular.min.js"></script>
+
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
 	<script src="static/navigation.js"></script>
 	<script src="static/moment.min.js"></script>
 	<script src="static/codemirror-5.10/lib/codemirror.js"></script>
@@ -26,6 +28,10 @@
 	<section ng-click="nav.activate(nav.BILDER)" class="implemented">
 		<h1>Bilder</h1>
 		<h2>Bilder hinzufügen, löschen, modifizieren</h2>
+	</section>
+	<section ng-click="nav.activate(nav.PRESSE)" class="implemented">
+		<h1>Presse</h1>
+		<h2>Presseartikel hinzufügen, löschen, modifizieren</h2>
 	</section>
 	<section ng-click="nav.activate(nav.NEWSTICKER)" class="implemented">
 		<h1>Newsticker</h1>
@@ -116,6 +122,34 @@
 			<textarea id="codemirror"></textarea>
 		</div>
 	</section>
+	<section ng-controller="PRSController as prs" ng-show="nav.isActive(nav.PRESSE)">
+		<div class="img">
+			<ul class ="entry-list">
+				<li class="bar">
+					<span ng-click="nav.activate(nav.DEFAULT)" class="back noselect">&#8592;</span>
+					<span ng-click="performPresseQuery()" class="new-item-btn noselect">Presseartikel laden</span>
+					<span ng-click="submit()" 
+						class="new-item-btn style1 noselect">artikel laden</span>
+				</li>
+				<li class="bar">
+					<form ng-model="pr" name="prsupl" method="post" enctype="multipart/form-data">
+					<input id="file_img" class="fileupload" name="file" type="file" required>
+					<input ng-model="data.caption" placeholder="herausgeber" type="text" required>
+					<input ng-model="data.desc" type="text" placeholder="beschreibung" required>
+					<input ng-model="data.date" ng-required="true" type="date" required> 
+					</form>
+					
+				</li>
+				<li ng-repeat="entry in getPresse() track by $index" class="pressestruktur">
+					<span ng-click="del(entry.url)" class="noselect img-btn">DEL</span>
+					<span class="struktur-title">{{entry.caption}}</span>
+					<span>{{entry.date}}</span>
+					<span>{{entry.name}}</span>
+					<span>{{entry.url}}</span>
+				</li>
+			</ul>
+		</div>
+	</section>
 	<section ng-controller="IMGController as img" ng-show="nav.isActive(nav.BILDER)">
 		<div class="img">
 			<ul class="entry-list">
@@ -141,40 +175,38 @@
 					</div>
 				</li>
 			</ul>
-			<div class="bbar">
-				<span id="transaction_status">
-					no transaction
-				</span>
-				<div id="console">kein output</div>
+			<div ng-show="commitTransaction" class="dialog">
+				<div class="head">
+					<h1>transaction <span id="transaction_name">{{transactionName}}</span></h1>	
+				</div>	
+				<div class="dbdy">
+					Transaktion speichern als: <input ng-model="tSaveAs" type="text" id="fname"><br/>
+					Production: <input type="checkbox" ng-model="tProd">
 				</div>
-				<div ng-show="commitTransaction" class="dialog">
-					<div class="head">
-						<h1>transaction <span id="transaction_name">{{transactionName}}</span></h1>	
-					</div>	
-					<div class="dbdy">
-						Transaktion speichern als: <input ng-model="tSaveAs" type="text" id="fname"><br/>
-						Production: <input type="checkbox" ng-model="tProd">
-					</div>
-					<div class="decide">
-						<div ng-click="dialogCommitTransaction()" class="ok">commit transaction</div>
-						<div ng-click="commitTransaction = false" class="abrt">abort transaction</div>
-					</div>
+				<div class="decide">
+					<div ng-click="dialogCommitTransaction()" class="ok">commit transaction</div>
+					<div ng-click="commitTransaction = false" class="abrt">abort transaction</div>
 				</div>
-				<div ng-show="showDialog" class="dialog">
-					<div class="head">
-						<h1>{{dialogTitle}}</h1>	
-					</div>	
-					<div class="dbdy">
-					{{dialogBody}}
-					</div>
-					<div class="decide">
-						<div ng-click="_dialogOK()" class="ok">commit transaction</div>
-						<div ng-click="showDialog = false" class="abrt">abort transaction</div>
-					</div>
-				</div>
-			<div ng-show="img.Struktur"
+			</div>
 		</div>
 	</section>
+	<div ng-controller="transact" class="bbar">
+		<span id="transaction_status">
+			no transaction
+		</span>
+		<div id="console">kein output</div>
+		<div ng-show="showDialog" class="dialog">
+			<div class="head">
+				<b>{{dialogTitle}}</b>	
+			</div>	
+			<div compile class="dbdy" ng-bind-html="dialogBody | to_trusted">
+			</div>
+			<div class="decide">
+				<div ng-click="_dialogOK()" class="ok">commit transaction</div>
+				<div ng-click="showDialog = false" class="abrt">abort transaction</div>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
