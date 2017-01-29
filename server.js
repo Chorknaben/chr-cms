@@ -433,6 +433,16 @@ bilder.post("/change", jsonParser, function(request, response){
 	}
 });
 
+function renameAcrossPartitions(from, to){
+    var is = fs.createReadStream(from);
+    var os = fs.createWriteStream(to);
+
+    is.pipe(os);
+    is.on('end', function(){
+        fs.unlinkSync(from);
+    })
+}
+
 bilder.post("/commit", jsonParser, function (request, response){
     // post param: transaction id, name, prod
     var data = request.body;
@@ -444,8 +454,8 @@ bilder.post("/commit", jsonParser, function (request, response){
             return;
         }
         try{
-	        fs.rename("temp/"+item["stage30"]["file"]+".json", "bilderStrukturen/"+data["name"]+".json");    
-	        fs.rename("temp/"+item["stage30"]["directory"], "bilderStrukturen/"+data["name"]);
+	        renameAcrossPartitions("temp/"+item["stage30"]["file"]+".json", "bilderStrukturen/"+data["name"]+".json");    
+	        renameAcrossPartitions("temp/"+item["stage30"]["directory"], "bilderStrukturen/"+data["name"]);
 	        child_process.spawn('mv', [item["stage10"].extracteddir, "bilderStrukturen/_"+data["name"]]);
         } catch(err) {
         	response.end(JSON.stringify({err: "Fatal FileSystem Error"}));
