@@ -3,7 +3,7 @@ FROM choros
 MAINTAINER Georg Grab
 
 ARG CACHE_DATE=2017-01-29
-RUN git clone https://github.com/talkdirty/cms /Backend
+RUN git clone https://github.com/Chorknaben/chr-cms /Backend
 
 COPY server.js /Backend/server.js
 COPY server.config /Backend/server.config
