@@ -455,7 +455,7 @@ bilder.post("/commit", jsonParser, function (request, response){
         }
         try{
 	        renameAcrossPartitions("temp/"+item["stage30"]["file"]+".json", "bilderStrukturen/"+data["name"]+".json");    
-	        renameAcrossPartitions("temp/"+item["stage30"]["directory"], "bilderStrukturen/"+data["name"]);
+	        child_process.spawn('mv', ["temp/"+item["stage30"]["directory"], "bilderStrukturen/"+data["name"]]);
 	        child_process.spawn('mv', [item["stage10"].extracteddir, "bilderStrukturen/_"+data["name"]]);
         } catch(err) {
         	response.end(JSON.stringify({err: "Fatal FileSystem Error"}));

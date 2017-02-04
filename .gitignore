@@ -32,7 +32,6 @@ node_modules
 struktur_job_out
 dataSymlink
 temp/*
-!temp
 bilderStrukturen/*
 !bilderStrukturen/meta
 
