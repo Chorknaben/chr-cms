@@ -327,7 +327,7 @@ function setProduction(){
 	console.log("Production: ln -sr bilderStrukturen/" + metaJson.prod + " dataSymlink/image");
 	child_process.spawnSync('rm', ['dataSymlink/image', 'dataSymlink/json/bilder.json']);
 	child_process.spawn('ln', ['-sr', 'bilderStrukturen/' + metaJson.prod, 'dataSymlink/image']); 
-	child_process.spawn('ln', ['-sr', 'bilderStrukturen/' + metaJson.prod + ".json", 'dataSymlink/json/bilder.json']); 
+	child_process.spawn('cp', ['bilderStrukturen/' + metaJson.prod + ".json", 'dataSymlink/json/bilder.json']); 
 }
 
 var allStructures;
