@@ -306,7 +306,7 @@ angular.module("backend", [])
 					$rootScope.$broadcast('setTransaction', 'Upload..');
 					var uri = "/presse/upl?name=" + encodeURIComponent($scope.data.desc) + "&caption=" +
 						encodeURIComponent($scope.data.caption) + "&date=" + encodeURIComponent(
-								$scope.data.date.getDate() + "." + $scope.data.date.getMonth() + 1 + "." +
+								$scope.data.date.getDate() + "." + ($scope.data.date.getMonth() + 1) + "." +
 								$scope.data.date.getFullYear()
 							);
 					console.log(uri);
